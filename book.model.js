@@ -36,6 +36,7 @@ export async function findBookById(id){
         }
 }
 
+
 export async function addBook(newBook){
         let books = await getAllBooks();
         if(findBook(books, newBook.id) !== -1){
@@ -46,12 +47,13 @@ export async function addBook(newBook){
         }
 }
 
-export async function changeBook(id, newDescription){
+export async function changeBook(id, newName, newDescription){
         let books = await getAllBooks();
         let bookIndex = findBook(books, id);
         if(findBook(books, id) === -1){
                 throw new Error (`Book with ID: ${id} does not exist!`);
         }else{
+                books[bookIndex].name = newName;
                 books[bookIndex].description = newDescription;
                 await save(books);
         }
