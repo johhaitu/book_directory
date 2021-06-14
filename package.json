@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/johhaitu/book_directory/issues"
   },
-  "homepage": "https://github.com/johhaitu/book_directory#readme"
+  "homepage": "https://github.com/johhaitu/book_directory#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
