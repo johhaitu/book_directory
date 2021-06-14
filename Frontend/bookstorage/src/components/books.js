@@ -19,9 +19,6 @@ export async function fetchBasket() {
       return(
         <div>
       <h1>Hello, and wellcome to the bookstorage!!</h1>
-      <Container>
-          
-      </Container>
       </div>
       )
   }
