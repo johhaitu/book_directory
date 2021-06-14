@@ -18,5 +18,9 @@
   "homepage": "https://github.com/johhaitu/book_directory#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "type" : "module",
+  "jshintConfig": { 
+  "esversion": 8, "strict": "implied", "devel": true, "node": true, "globals": {} 
   }
 }
